@@ -12,6 +12,8 @@
         "symfony/yaml": "5.0.*"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "symfony/test-pack": "^1.0"
     },
     "config": {
         "preferred-install": {
@@ -48,6 +50,12 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
+        ],
+        "check-cs": [
+            "php-cs-fixer fix --dry-run --diff"
+        ],
+        "fix-cs": [
+            "php-cs-fixer fix"
         ]
     },
     "conflict": {
