@@ -7,6 +7,15 @@
                 <h1>Word Counter</h1>
                 <p>Count unique words in given text.</p>
 
+                {% if results is defined %}
+                    <h2>Results:</h2>
+                    <ul style="column-count: 4;">
+                        {% for word, count in results|sort|reverse %}
+                            <li>{{ word }}: {{ count }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+
                 {{ form(form) }}
             </div>
         </div>

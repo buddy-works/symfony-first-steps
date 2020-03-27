@@ -59,6 +59,13 @@
         ],
         "fix-cs": [
             "php-cs-fixer fix"
+        ],
+        "phpunit": [
+            "bin/phpunit --colors=always"
+        ],
+        "tests": [
+            "@check-cs",
+            "@phpunit"
         ]
     },
     "conflict": {
