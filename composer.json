@@ -1,6 +1,8 @@
 {
+    "name": "buddy-works/symfony-first-steps",
+    "description": "Sample Symfony project which will help you create the first buddy.works pipeline",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
     "require": {
         "php": "^7.2.5",
         "ext-ctype": "*",
